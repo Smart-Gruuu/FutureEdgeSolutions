@@ -11,7 +11,7 @@ A modern consulting firm website for **FutureEdge Solutions**, covering healthca
 - **Case Studies**: Client success stories with results and testimonials
 - **Our Process**: Discovery → Strategy → Implementation → Support
 - **Blog**: MDX-based articles with frontmatter
-- **Contact**: Form (React Hook Form + Zod), API route, Resend email, map placeholder
+- **Contact**: Form (React Hook Form + Zod), mailto: link, map placeholder
 - **FAQ**: Accordion from JSON
 - **Testimonials**: Dedicated page
 - **Legal**: Privacy Policy, Terms of Service (placeholder copy)
@@ -24,7 +24,7 @@ A modern consulting firm website for **FutureEdge Solutions**, covering healthca
 - **Styling**: Tailwind CSS, shadcn-style UI (Radix)
 - **Motion**: Framer Motion (scroll-triggered fade-in)
 - **Content**: JSON (services, industries, team, etc.) + MDX (blog)
-- **Forms**: React Hook Form, Zod, Resend (contact)
+- **Forms**: React Hook Form, Zod, mailto: (contact)
 
 ## Getting started
 
@@ -34,15 +34,7 @@ A modern consulting firm website for **FutureEdge Solutions**, covering healthca
    npm install
    ```
 
-2. **Environment variables**
-
-   Copy `.env.example` to `.env.local` and set:
-
-   - `RESEND_API_KEY`: Resend API key for contact form emails
-   - `CONTACT_EMAIL`: Inbox for contact form submissions
-   - `EMAIL_FROM`: Sender address (e.g. `onboarding@resend.dev` for Resend sandbox)
-
-3. **Run development server**
+2. **Run development server**
 
    ```bash
    npm run dev
@@ -50,7 +42,7 @@ A modern consulting firm website for **FutureEdge Solutions**, covering healthca
 
    Open [http://localhost:3000](http://localhost:3000).
 
-4. **Build for production**
+3. **Build for production**
 
    ```bash
    npm run build
@@ -64,7 +56,7 @@ src/
 ├── app/           # App Router pages and API routes
 ├── components/    # Layout, UI, home, about, forms, etc.
 ├── content/       # JSON + blog MDX
-├── lib/           # Content loaders, email, utils, nav
+├── lib/           # Content loaders, utils, nav
 └── types/         # Content types
 ```
 

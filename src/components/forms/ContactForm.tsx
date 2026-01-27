@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { siteConfig } from "@/lib/nav";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -32,27 +33,26 @@ export function ContactForm() {
     resolver: zodResolver(schema),
   });
 
-  async function onSubmit(data: FormData) {
+  function onSubmit(data: FormData) {
     setStatus("idle");
     setErrorMessage("");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      const json = await res.json();
-      if (!res.ok) {
-        setStatus("error");
-        setErrorMessage(json.error ?? "Something went wrong. Please try again.");
-        return;
-      }
-      setStatus("success");
-      reset();
-    } catch {
-      setStatus("error");
-      setErrorMessage("Network error. Please try again.");
-    }
+    const body = [
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      data.company ? `Company: ${data.company}` : "",
+      `Subject: ${data.subject}`,
+      "",
+      data.message,
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const params = new URLSearchParams({
+      subject: `[FutureEdge Contact] ${data.subject}`,
+      body,
+    });
+    window.location.href = `mailto:${siteConfig.contact.email}?${params.toString()}`;
+    setStatus("success");
+    reset();
   }
 
   return (
@@ -91,7 +91,7 @@ export function ContactForm() {
       </div>
       {status === "success" && (
         <p className="rounded-lg bg-green-500/10 p-4 text-sm text-green-700 dark:text-green-400">
-          Thank you. Your message has been sent. We&apos;ll be in touch soon.
+          Your email client should open with a draft. Send it to complete your message.
         </p>
       )}
       {status === "error" && (
@@ -100,7 +100,7 @@ export function ContactForm() {
         </p>
       )}
       <Button type="submit" disabled={isSubmitting} size="lg">
-        {isSubmitting ? "Sending…" : "Send message"}
+        Open email to send
       </Button>
     </form>
   );
