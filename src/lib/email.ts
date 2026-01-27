@@ -22,7 +22,7 @@ export async function sendContactEmail(payload: ContactEmailPayload): Promise<{ 
     from,
     to,
     subject: `[FutureEdge Contact] ${payload.subject}`,
-    replyTo: payload.email,
+    reply_to: payload.email,
     html: `
       <h2>New contact form submission</h2>
       <p><strong>Name:</strong> ${escapeHtml(payload.name)}</p>
