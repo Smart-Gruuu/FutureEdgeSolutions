@@ -104,6 +104,6 @@ export function getBlogPost(slug: string): { meta: BlogPostMeta; content: string
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
-  const meta: BlogPostMeta = { slug, ...data };
+  const meta = { slug, ...data } as BlogPostMeta;
   return { meta, content };
 }
