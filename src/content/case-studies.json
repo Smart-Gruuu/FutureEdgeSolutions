@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "healthcare-provider-digital",
+    "title": "Digital transformation for a regional healthcare provider",
+    "client": "Regional Health System",
+    "industry": "Healthcare",
+    "excerpt": "EHR optimisation, care model redesign, and 20% efficiency gains.",
+    "challenge": "A regional healthcare provider faced rising costs, clinician burnout, and fragmented systems. They needed a clear digital strategy and operational improvements without disrupting patient care.",
+    "approach": "We conducted a discovery phase across clinical and operational stakeholders, mapped legacy workflows, and designed a phased roadmap. We prioritised EHR optimisation, care model redesign, and targeted automation.",
+    "results": [
+      { "metric": "Operational efficiency", "value": "20% improvement" },
+      { "metric": "Clinician satisfaction", "value": "15% increase" },
+      { "metric": "Time to implement", "value": "18 months" }
+    ],
+    "testimonial": {
+      "quote": "FutureEdge brought structure and clarity to our digital journey. The team understood our constraints and delivered results we could measure.",
+      "name": "Sarah Chen",
+      "role": "Chief Digital Officer",
+      "company": "Regional Health System"
+    }
+  },
+  {
+    "slug": "fintech-scale-up",
+    "title": "Scaling compliance and product for a fintech scale-up",
+    "client": "PayTech Inc.",
+    "industry": "Fintech",
+    "excerpt": "Licensing strategy, RegTech roadmap, and product expansion.",
+    "challenge": "A fast-growing payments fintech needed to expand into new markets while managing regulatory complexity. They lacked an integrated compliance and product strategy.",
+    "approach": "We developed a licensing and RegTech roadmap, aligned product roadmap with compliance milestones, and designed target operating model for compliance and risk.",
+    "results": [
+      { "metric": "New market entries", "value": "3 in 12 months" },
+      { "metric": "Compliance audit findings", "value": "40% reduction" },
+      { "metric": "Product launch cycle", "value": "30% faster" }
+    ],
+    "testimonial": {
+      "quote": "FutureEdge helped us scale without stumbling. Their fintech expertise saved us months of trial and error.",
+      "name": "James Okonkwo",
+      "role": "VP Product",
+      "company": "PayTech Inc."
+    }
+  },
+  {
+    "slug": "ecommerce-d2c-growth",
+    "title": "D2C brand growth and platform migration",
+    "client": "StyleForward",
+    "industry": "E‑commerce",
+    "excerpt": "Platform migration, CRO, and 35% revenue growth.",
+    "challenge": "A D2C fashion brand was outgrowing its current platform and struggling with conversion and international expansion. They needed a clear migration path and growth playbook.",
+    "approach": "We ran a platform selection process, designed the migration and data strategy, and implemented a CRO programme. We supported international roll-out and omnichannel integration.",
+    "results": [
+      { "metric": "Revenue growth", "value": "35% YoY" },
+      { "metric": "Conversion rate", "value": "22% increase" },
+      { "metric": "New markets", "value": "5 countries" }
+    ],
+    "testimonial": {
+      "quote": "From platform choice to international launch, FutureEdge was with us every step. The results speak for themselves.",
+      "name": "Elena Vasquez",
+      "role": "CEO",
+      "company": "StyleForward"
+    }
+  }
+]

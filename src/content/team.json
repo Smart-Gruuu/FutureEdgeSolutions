@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "alex-morgan",
+    "name": "Alex Morgan",
+    "role": "Managing Partner",
+    "bio": "Alex leads FutureEdge and brings 20+ years in strategy and operations across healthcare and financial services.",
+    "image": "/images/team/alex.jpg"
+  },
+  {
+    "slug": "priya-sharma",
+    "name": "Priya Sharma",
+    "role": "Partner, Healthcare",
+    "bio": "Priya specialises in healthcare transformation, digital health, and regulatory strategy. Former health system COO.",
+    "image": "/images/team/priya.jpg"
+  },
+  {
+    "slug": "marcus-webb",
+    "name": "Marcus Webb",
+    "role": "Partner, Fintech",
+    "bio": "Marcus advises fintechs and banks on product, compliance, and scaling. Ex-PayPal and leading neobank.",
+    "image": "/images/team/marcus.jpg"
+  },
+  {
+    "slug": "yuki-tanaka",
+    "name": "Yuki Tanaka",
+    "role": "Partner, E‑commerce",
+    "bio": "Yuki drives e‑commerce and retail strategy, platform migrations, and growth programmes for D2C and marketplaces.",
+    "image": "/images/team/yuki.jpg"
+  }
+]

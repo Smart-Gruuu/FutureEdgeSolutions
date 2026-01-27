@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "quote": "FutureEdge brought structure and clarity to our digital journey. The team understood our constraints and delivered results we could measure.",
+    "name": "Sarah Chen",
+    "role": "Chief Digital Officer",
+    "company": "Regional Health System",
+    "industry": "Healthcare"
+  },
+  {
+    "id": "2",
+    "quote": "FutureEdge helped us scale without stumbling. Their fintech expertise saved us months of trial and error.",
+    "name": "James Okonkwo",
+    "role": "VP Product",
+    "company": "PayTech Inc.",
+    "industry": "Fintech"
+  },
+  {
+    "id": "3",
+    "quote": "From platform choice to international launch, FutureEdge was with us every step. The results speak for themselves.",
+    "name": "Elena Vasquez",
+    "role": "CEO",
+    "company": "StyleForward",
+    "industry": "E‑commerce"
+  },
+  {
+    "id": "4",
+    "quote": "Strategic rigor, practical execution, and a genuine partnership. We continue to work with FutureEdge on new initiatives.",
+    "name": "David Kim",
+    "role": "Chief Strategy Officer",
+    "company": "Global Pharma Co.",
+    "industry": "Healthcare"
+  },
+  {
+    "id": "5",
+    "quote": "They don't just advise—they roll up their sleeves. Our compliance and product teams still use the playbooks they built.",
+    "name": "Rachel Foster",
+    "role": "Head of Compliance",
+    "company": "NeoBank Ltd.",
+    "industry": "Fintech"
+  }
+]

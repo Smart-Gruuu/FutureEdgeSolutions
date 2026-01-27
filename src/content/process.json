@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Discovery",
+    "description": "We start by understanding your business, goals, and constraints. Through workshops, interviews, and data review, we align on the problem space and success criteria.",
+    "order": 1
+  },
+  {
+    "id": "2",
+    "title": "Strategy",
+    "description": "We develop a clear strategy and roadmap—prioritised initiatives, timelines, and resource needs. You get actionable recommendations and optionality, not just a report.",
+    "order": 2
+  },
+  {
+    "id": "3",
+    "title": "Implementation",
+    "description": "Where needed, we support implementation: vendor selection, design, build, and integration. We work alongside your teams to ensure sustainable ownership.",
+    "order": 3
+  },
+  {
+    "id": "4",
+    "title": "Ongoing support",
+    "description": "We offer retainer and project-based support for follow-on work, ensuring continuity and adapting as your needs evolve.",
+    "order": 4
+  }
+]

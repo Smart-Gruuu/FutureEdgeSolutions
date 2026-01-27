@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "question": "What industries do you serve?",
+    "answer": "We focus on healthcare, fintech, and e‑commerce, with deep expertise in each. We also support digital transformation initiatives across other sectors when the fit is right.",
+    "category": "General"
+  },
+  {
+    "id": "2",
+    "question": "How do you structure engagements?",
+    "answer": "We offer project-based engagements (e.g. strategy, assessment, implementation support) and retainer arrangements for ongoing advisory. We tailor scope, timeline, and team to your needs.",
+    "category": "Process"
+  },
+  {
+    "id": "3",
+    "question": "What is your typical pricing model?",
+    "answer": "We work on fixed-fee projects or time-and-materials arrangements, depending on scope and uncertainty. We provide clear proposals and milestones before starting.",
+    "category": "Process"
+  },
+  {
+    "id": "4",
+    "question": "Do you work with startups as well as enterprises?",
+    "answer": "Yes. We work with growth-stage startups, scale-ups, and enterprises. Our engagement model adapts to your size, stage, and budget.",
+    "category": "General"
+  },
+  {
+    "id": "5",
+    "question": "How do you handle confidential or sensitive data?",
+    "answer": "We follow strict confidentiality and data handling practices. We sign NDAs, use secure communication channels, and comply with relevant regulations (e.g. HIPAA where applicable).",
+    "category": "General"
+  },
+  {
+    "id": "6",
+    "question": "Can you support us globally?",
+    "answer": "We are headquartered in the US and work with clients globally. We operate across time zones and can support regional and multi-country initiatives.",
+    "category": "General"
+  }
+]

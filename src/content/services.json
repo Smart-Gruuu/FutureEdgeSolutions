@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "healthcare-consulting",
+    "title": "Healthcare Consulting",
+    "excerpt": "Navigate regulatory complexity, digital transformation, and patient-centric innovation.",
+    "description": "FutureEdge helps healthcare organizations navigate regulatory complexity, implement digital health solutions, and drive operational excellence. We combine deep industry knowledge with strategic and technology expertise to deliver measurable outcomes.",
+    "benefits": [
+      "Regulatory compliance and risk mitigation",
+      "Digital health and EHR optimization",
+      "Care delivery and operational efficiency",
+      "Patient experience and engagement"
+    ],
+    "deliverables": ["Strategy & roadmap", "Process redesign", "Vendor selection", "Implementation support"],
+    "icon": "health"
+  },
+  {
+    "slug": "fintech-consulting",
+    "title": "Fintech Consulting",
+    "excerpt": "Accelerate product innovation, compliance, and scalable infrastructure.",
+    "description": "We partner with fintechs and financial institutions to accelerate product innovation, achieve regulatory compliance, and build scalable infrastructure. Our consultants bring experience from payments, lending, wealth tech, and core banking.",
+    "benefits": [
+      "Product strategy and go-to-market",
+      "RegTech and compliance (AML, KYC, licensing)",
+      "Core systems and API architecture",
+      "Partnership and ecosystem development"
+    ],
+    "deliverables": ["Market assessment", "Compliance playbook", "Technical architecture", "Integration design"],
+    "icon": "fintech"
+  },
+  {
+    "slug": "ecommerce-solutions",
+    "title": "E‑commerce Solutions",
+    "excerpt": "Scale conversion, operations, and omnichannel experiences.",
+    "description": "From D2C brands to marketplaces, we help e‑commerce businesses scale conversion, streamline operations, and deliver seamless omnichannel experiences. We focus on platform selection, analytics, and growth strategy.",
+    "benefits": [
+      "Platform selection and migration",
+      "Conversion optimization and CRO",
+      "Inventory and supply chain optimization",
+      "Omnichannel and international expansion"
+    ],
+    "deliverables": ["Platform audit", "Growth playbook", "Tech stack design", "Implementation support"],
+    "icon": "ecommerce"
+  },
+  {
+    "slug": "digital-transformation",
+    "title": "Digital Transformation",
+    "excerpt": "Strategy, technology, and change management for lasting impact.",
+    "description": "We guide enterprises through end-to-end digital transformation—from strategy and technology selection to implementation and change management. Our approach ensures alignment with business goals and sustainable adoption.",
+    "benefits": [
+      "Digital strategy and roadmap",
+      "Technology modernisation",
+      "Data and analytics enablement",
+      "Change management and training"
+    ],
+    "deliverables": ["Strategy document", "Target architecture", "Phased roadmap", "Change plan"],
+    "icon": "digital"
+  }
+]

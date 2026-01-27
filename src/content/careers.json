@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "senior-consultant-healthcare",
+    "title": "Senior Consultant, Healthcare",
+    "location": "Remote / US",
+    "type": "Full-time",
+    "description": "We are looking for a Senior Consultant to lead healthcare engagements, from strategy through implementation. You will work with payers, providers, and digital health clients.",
+    "requirements": [
+      "6+ years in healthcare consulting or relevant industry role",
+      "Experience with digital health, EHR, or care delivery transformation",
+      "Strong client communication and project management skills",
+      "Willingness to travel as needed"
+    ]
+  },
+  {
+    "slug": "consultant-fintech",
+    "title": "Consultant, Fintech",
+    "location": "Remote / US",
+    "type": "Full-time",
+    "description": "Join our fintech practice to support product, compliance, and scaling engagements. You will work with fintechs and financial institutions on strategy and execution.",
+    "requirements": [
+      "3+ years in fintech, banking, or management consulting",
+      "Familiarity with payments, lending, or RegTech",
+      "Analytical mindset and structured problem-solving",
+      "Strong written and verbal communication"
+    ]
+  }
+]
