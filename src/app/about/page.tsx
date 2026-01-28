@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "FutureEdge Solutions — mission, values, history, and team. We serve healthcare, fintech, and e‑commerce globally.",
+    "FutureEdge Solutions — mission, values, history, and team. We serve healthcare, fintech, and e‑commerce with digital transformation and AI integration. Headquarters in Denver; we work with clients worldwide.",
 };
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="About FutureEdge Solutions"
-            subtitle="We combine deep industry expertise with strategic and technology capabilities to help organizations achieve measurable results. HQ in the US, working globally."
+            subtitle="We combine deep industry expertise with strategy, technology, and AI to help organizations achieve measurable results. Headquarters in Denver; we work with clients worldwide."
           />
         </div>
       </section>
@@ -30,13 +30,13 @@ export default function AboutPage() {
           <h2 className="font-heading text-2xl font-bold text-foreground">Mission & values</h2>
           <p className="mt-4 text-muted-foreground">
             Our mission is to help organizations navigate complexity, drive digital transformation,
-            and achieve lasting impact. We believe in partnership over project mentality—we work
-            alongside your teams, transfer knowledge, and leave you stronger.
+            integrate and develop AI solutions, and achieve lasting impact. We operate as partners, not vendors—we work
+            alongside your teams, transfer capability, and leave you stronger.
           </p>
           <ul className="mt-6 list-inside list-disc space-y-2 text-muted-foreground">
             <li>Integrity and transparency in every engagement</li>
-            <li>Evidence-based strategies, not fads</li>
-            <li>Practical execution with measurable outcomes</li>
+            <li>Evidence-based strategy, not trends</li>
+            <li>Execution discipline with measurable outcomes</li>
             <li>Long-term relationships over short-term gains</li>
           </ul>
         </div>
@@ -46,10 +46,10 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-heading text-2xl font-bold text-foreground">Our history</h2>
           <p className="mt-4 text-muted-foreground">
-            FutureEdge was founded by practitioners from top consultancies and industry. We saw a
+            FutureEdge was founded by practitioners from leading consultancies and industry. We saw a
             need for consulting that blends strategic rigor with hands-on implementation—and that
-            speaks the language of healthcare, fintech, and e‑commerce. Today we work with
-            startups, scale-ups, and enterprises across the US and globally.
+            speaks the language of healthcare, fintech, e‑commerce, and AI. Today we work with
+            startups, scale-ups, and enterprises across the US and worldwide, including digital transformation and AI integration.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function AboutPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Industries we serve"
-            subtitle="Healthcare, fintech, and e‑commerce—with deep expertise in each."
+            subtitle="Healthcare, fintech, and e‑commerce—plus AI integration and development—with dedicated practice expertise."
           />
           <div className="mt-12 flex flex-wrap gap-4">
             {industries.map((i) => (
@@ -74,7 +74,7 @@ export default function AboutPage() {
         <div className="container mx-auto">
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <SectionHeading
-              title="Meet the team"
+              title="Leadership team"
               subtitle="Practitioners with deep industry and consulting experience."
             />
             <Button asChild variant="outline" size="sm" className="w-fit">

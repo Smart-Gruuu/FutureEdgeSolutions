@@ -7,7 +7,7 @@ import { CardLink } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "Real-world examples of how FutureEdge Solutions helped clients achieve measurable results.",
+    "Selected engagements and measurable outcomes across healthcare, fintech, and e‑commerce.",
 };
 
 export default function CaseStudiesPage() {
@@ -19,7 +19,7 @@ export default function CaseStudiesPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Case studies"
-            subtitle="Real-world examples of how we have helped clients achieve measurable results across healthcare, fintech, and e‑commerce."
+            subtitle="Selected engagements and measurable outcomes across healthcare, fintech, and e‑commerce."
           />
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function CaseStudiesPage() {
                   </p>
                 )}
                 <span className="mt-6 inline-block font-medium text-primary hover:underline">
-                  Read more
+                  Read case study →
                 </span>
               </CardLink>
             ))}

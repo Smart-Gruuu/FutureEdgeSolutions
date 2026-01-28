@@ -4,14 +4,14 @@ import { footerLinks, siteConfig } from "@/lib/nav";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
-      <div className="container mx-auto px-4 py-12 md:px-6">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+      <div className="container mx-auto px-4 py-10 md:px-6">
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="md:col-span-2">
             <Link href="/" className="font-heading text-lg font-bold text-foreground">
               {siteConfig.name}
             </Link>
             <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-              {siteConfig.tagline}. HQ in the US, working globally.
+              {siteConfig.tagline}. Headquarters in Denver; we work with clients worldwide.
             </p>
             <div className="mt-4 flex gap-4">
               <a
@@ -40,24 +40,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Links</h3>
-            <ul className="mt-4 space-y-2">
-              {footerLinks.main.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <h3 className="text-sm font-semibold text-foreground">Contact</h3>
-            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            <ul className="mt-4 space-y-1 text-sm text-muted-foreground">
               <li>
                 <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-foreground">
                   {siteConfig.contact.email}
@@ -68,24 +52,33 @@ export function Footer() {
                   {siteConfig.contact.phone}
                 </a>
               </li>
-              <li className="max-w-xs">{siteConfig.contact.address}</li>
             </ul>
-            <div className="mt-4">
-              <Link
-                href="/careers"
-                className="text-sm font-medium text-primary hover:underline"
-              >
-                Careers
-              </Link>
-            </div>
+            <Link
+              href={footerLinks.contact.href}
+              className="mt-3 inline-block text-sm font-medium text-primary hover:underline"
+            >
+              {footerLinks.contact.label}
+            </Link>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+            © {new Date().getFullYear()} {siteConfig.name}.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
+            <Link href={footerLinks.about.href} className="text-sm text-muted-foreground hover:text-foreground">
+              {footerLinks.about.label}
+            </Link>
+            <Link href={footerLinks.faq.href} className="text-sm text-muted-foreground hover:text-foreground">
+              {footerLinks.faq.label}
+            </Link>
+            <Link href={footerLinks.careers.href} className="text-sm text-muted-foreground hover:text-foreground">
+              {footerLinks.careers.label}
+            </Link>
+            <Link href={footerLinks.contact.href} className="text-sm text-muted-foreground hover:text-foreground">
+              {footerLinks.contact.label}
+            </Link>
             {footerLinks.legal.map((link) => (
               <Link
                 key={link.href}

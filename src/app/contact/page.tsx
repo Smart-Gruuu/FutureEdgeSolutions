@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with FutureEdge Solutions. Contact form, address, phone, email, and social links.",
+    "Contact FutureEdge Solutions. Send a message, or reach us by email, phone, or at our Denver office.",
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Contact us"
-            subtitle="Tell us about your goals. We'll help you navigate complexity and deliver measurable results."
+            subtitle="Share your objectives and we’ll outline how we can help. We respond within one business day."
           />
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div>
             <h2 className="font-heading text-xl font-bold text-foreground">Send a message</h2>
             <p className="mt-2 text-muted-foreground">
-              Fill out the form and we&apos;ll get back to you shortly.
+              Complete the form and we’ll respond within one business day.
             </p>
             <div className="mt-8">
               <ContactForm />
@@ -36,7 +36,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-xl font-bold text-foreground">Get in touch</h2>
+            <h2 className="font-heading text-xl font-bold text-foreground">Contact details</h2>
             <ul className="mt-6 space-y-4 text-muted-foreground">
               <li>
                 <span className="font-medium text-foreground">Email</span>
@@ -97,7 +97,7 @@ export default function ContactPage() {
         <div className="container mx-auto">
           <h2 className="font-heading text-xl font-bold text-foreground">Office location</h2>
           <p className="mt-2 text-muted-foreground">
-            We are headquartered in Denver and work with clients globally.
+            We are headquartered in Denver and work with clients worldwide.
           </p>
           <div className="mt-6 aspect-video w-full max-w-3xl overflow-hidden rounded-xl border border-border">
             <iframe
@@ -109,12 +109,12 @@ export default function ContactPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-full w-full"
-              title="Office location at 1401 Lawrence St Suite 1600"
+              title="Office location at 1401 Lawrence St, Suite 1600, Denver, CO"
             />
           </div>
           <Button asChild variant="outline" className="mt-4">
             <a
-              href="https://maps.google.com/?q=1401+Lawrence+St+Suite+1600"
+              href={`https://maps.google.com/?q=${encodeURIComponent(siteConfig.contact.address)}`}
               target="_blank"
               rel="noopener noreferrer"
             >

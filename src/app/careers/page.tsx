@@ -7,7 +7,7 @@ import { CardLink } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join FutureEdge Solutions. Open positions in consulting for healthcare, fintech, and e‑commerce.",
+    "Join FutureEdge Solutions. Open positions in consulting for healthcare, fintech, e‑commerce, and AI integration.",
 };
 
 export default function CareersPage() {
@@ -19,7 +19,7 @@ export default function CareersPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Careers"
-            subtitle="We're growing. Join our team and help organizations navigate complexity and achieve measurable results."
+            subtitle="We’re growing. Join our team and help organizations navigate complexity and achieve measurable results."
           />
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function CareersPage() {
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-heading text-2xl font-bold text-foreground">Why join us</h2>
           <p className="mt-4 text-muted-foreground">
-            We offer meaningful work across healthcare, fintech, and e‑commerce; flexible,
+            We offer meaningful work across healthcare, fintech, e‑commerce, and AI integration and development; flexible,
             remote-friendly arrangements; and a culture that values integrity, rigor, and
             collaboration.
           </p>
@@ -40,7 +40,7 @@ export default function CareersPage() {
           <h2 className="font-heading text-2xl font-bold text-foreground">Open positions</h2>
           {careers.length === 0 ? (
             <p className="mt-6 text-muted-foreground">
-              No open positions at the moment. Check back later or reach out at{" "}
+              No open positions at the moment. Check back later or email{" "}
               <a href="mailto:hello@futureedge.io" className="text-primary hover:underline">
                 hello@futureedge.io
               </a>{" "}

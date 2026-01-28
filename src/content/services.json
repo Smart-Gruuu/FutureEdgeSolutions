@@ -2,8 +2,8 @@
   {
     "slug": "healthcare-consulting",
     "title": "Healthcare Consulting",
-    "excerpt": "Navigate regulatory complexity, digital transformation, and patient-centric innovation.",
-    "description": "FutureEdge helps healthcare organizations navigate regulatory complexity, implement digital health solutions, and drive operational excellence. We combine deep industry knowledge with strategic and technology expertise to deliver measurable outcomes.",
+    "excerpt": "Regulatory clarity, digital health adoption, and operational excellence.",
+    "description": "FutureEdge helps healthcare organizations navigate regulatory complexity, adopt digital health solutions, and achieve operational excellence. We combine deep industry knowledge with strategy and technology to deliver measurable outcomes.",
     "benefits": [
       "Regulatory compliance and risk mitigation",
       "Digital health and EHR optimization",
@@ -16,8 +16,8 @@
   {
     "slug": "fintech-consulting",
     "title": "Fintech Consulting",
-    "excerpt": "Accelerate product innovation, compliance, and scalable infrastructure.",
-    "description": "We partner with fintechs and financial institutions to accelerate product innovation, achieve regulatory compliance, and build scalable infrastructure. Our consultants bring experience from payments, lending, wealth tech, and core banking.",
+    "excerpt": "Product strategy, RegTech, and scalable platform architecture.",
+    "description": "We partner with fintechs and financial institutions on product strategy, regulatory compliance, and scalable infrastructure. Our team brings hands-on experience in payments, lending, wealth tech, and core banking.",
     "benefits": [
       "Product strategy and go-to-market",
       "RegTech and compliance (AML, KYC, licensing)",
@@ -30,8 +30,8 @@
   {
     "slug": "ecommerce-solutions",
     "title": "E‑commerce Solutions",
-    "excerpt": "Scale conversion, operations, and omnichannel experiences.",
-    "description": "From D2C brands to marketplaces, we help e‑commerce businesses scale conversion, streamline operations, and deliver seamless omnichannel experiences. We focus on platform selection, analytics, and growth strategy.",
+    "excerpt": "Conversion, operations, and omnichannel growth.",
+    "description": "We work with D2C brands and marketplaces to improve conversion, streamline operations, and scale omnichannel. Our focus is platform strategy, analytics, and execution that drives revenue.",
     "benefits": [
       "Platform selection and migration",
       "Conversion optimization and CRO",
@@ -44,15 +44,29 @@
   {
     "slug": "digital-transformation",
     "title": "Digital Transformation",
-    "excerpt": "Strategy, technology, and change management for lasting impact.",
-    "description": "We guide enterprises through end-to-end digital transformation—from strategy and technology selection to implementation and change management. Our approach ensures alignment with business goals and sustainable adoption.",
+    "excerpt": "End-to-end strategy, technology, and change management.",
+    "description": "We guide enterprises through digital transformation—from strategy and technology selection to implementation and change management. Our approach aligns with business goals and drives sustainable adoption.",
     "benefits": [
       "Digital strategy and roadmap",
-      "Technology modernisation",
+      "Technology modernization",
       "Data and analytics enablement",
       "Change management and training"
     ],
     "deliverables": ["Strategy document", "Target architecture", "Phased roadmap", "Change plan"],
     "icon": "digital"
+  },
+  {
+    "slug": "ai-integration-development",
+    "title": "AI Integration & Development",
+    "excerpt": "AI strategy, integration, and custom development for measurable impact.",
+    "description": "We help organizations adopt and build AI—from integrating existing models and APIs to custom development. We focus on use-case alignment, data readiness, governance, and responsible deployment across healthcare, fintech, e‑commerce, and enterprise.",
+    "benefits": [
+      "AI strategy and use-case prioritization",
+      "Integration of LLMs, vision, and automation",
+      "Custom AI development and fine-tuning",
+      "Data pipelines, governance, and responsible AI"
+    ],
+    "deliverables": ["AI roadmap", "Proof of concept", "Integration architecture", "Model ops and monitoring"],
+    "icon": "ai"
   }
 ]

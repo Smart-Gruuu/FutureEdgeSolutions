@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "Client testimonials and reviews from healthcare, fintech, and e‑commerce organizations we've partnered with.",
+    "Client testimonials from healthcare, fintech, and e‑commerce organizations we’ve partnered with.",
 };
 
 export default function TestimonialsPage() {
@@ -49,7 +49,7 @@ export default function TestimonialsPage() {
           </div>
           <div className="mt-12 text-center">
             <Button asChild>
-              <Link href="/contact#form">Get a Consultation</Link>
+              <Link href="/contact#form">Contact us</Link>
             </Button>
           </div>
         </div>

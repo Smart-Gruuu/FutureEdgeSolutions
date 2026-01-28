@@ -11,10 +11,10 @@ export function ProcessTeaser() {
         <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             title="Our process"
-            subtitle="From discovery and strategy to implementation and ongoing support. Clear steps, measurable outcomes."
+            subtitle="From discovery and strategy through implementation and ongoing support. Clear steps, measurable outcomes."
           />
           <Button asChild variant="outline" size="sm" className="w-fit">
-            <Link href="/process">See full process</Link>
+            <Link href="/process">View full process</Link>
           </Button>
         </div>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

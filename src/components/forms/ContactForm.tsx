@@ -91,7 +91,7 @@ export function ContactForm() {
       </div>
       {status === "success" && (
         <p className="rounded-lg bg-green-500/10 p-4 text-sm text-green-700 dark:text-green-400">
-          Your email client should open with a draft. Send it to complete your message.
+          Your email client will open with a draft. Send it to complete your message.
         </p>
       )}
       {status === "error" && (
@@ -100,7 +100,7 @@ export function ContactForm() {
         </p>
       )}
       <Button type="submit" disabled={isSubmitting} size="lg">
-        Open email to send
+        Open email client
       </Button>
     </form>
   );

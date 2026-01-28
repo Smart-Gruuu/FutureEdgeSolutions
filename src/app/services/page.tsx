@@ -25,12 +25,17 @@ const iconMap: Record<string, React.ReactNode> = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
     </svg>
   ),
+  ai: (
+    <svg className="size-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+    </svg>
+  ),
 };
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Healthcare consulting, fintech consulting, e‑commerce solutions, and digital transformation. Strategy, implementation, and ongoing support.",
+    "Healthcare consulting, fintech consulting, e‑commerce solutions, digital transformation, and AI integration. Strategy, implementation, and ongoing support.",
 };
 
 export default function ServicesPage() {
@@ -42,7 +47,7 @@ export default function ServicesPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Our services"
-            subtitle="Strategy, implementation, and ongoing support across healthcare, fintech, and e‑commerce."
+            subtitle="Strategy, implementation, and ongoing support across healthcare, fintech, e‑commerce, and AI integration."
           />
         </div>
       </section>
@@ -58,7 +63,7 @@ export default function ServicesPage() {
                 <h2 className="font-heading text-2xl font-bold text-foreground">{s.title}</h2>
                 <p className="mt-3 text-muted-foreground">{s.excerpt}</p>
                 <span className="mt-6 inline-block font-medium text-primary hover:underline">
-                  Learn more →
+                  View service →
                 </span>
               </CardLink>
             ))}

@@ -1,24 +1,21 @@
 import { Hero } from "@/components/home/Hero";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
-import { ProcessTeaser } from "@/components/home/ProcessTeaser";
-import { TestimonialsStrip } from "@/components/home/TestimonialsStrip";
+import { SuccessStoriesPreview } from "@/components/home/SuccessStoriesPreview";
 import { CTABlock } from "@/components/home/CTABlock";
 import { AnimateSection } from "@/components/shared/AnimateSection";
 
+/** Simplified homepage: Hero → Services → Success stories → Get in touch */
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <AnimateSection className="px-4 py-20 md:py-28">
+      <AnimateSection className="px-4 py-16 md:py-24">
         <ServicesPreview />
       </AnimateSection>
-      <AnimateSection className="bg-muted/40 px-4 py-20 md:py-28">
-        <ProcessTeaser />
+      <AnimateSection className="bg-muted/40 px-4 py-16 md:py-24">
+        <SuccessStoriesPreview />
       </AnimateSection>
-      <AnimateSection className="px-4 py-20 md:py-28">
-        <TestimonialsStrip />
-      </AnimateSection>
-      <AnimateSection className="bg-navy-950 px-4 py-20 text-white md:py-28">
+      <AnimateSection className="bg-muted/60 px-4 py-16 md:py-24">
         <CTABlock />
       </AnimateSection>
     </>

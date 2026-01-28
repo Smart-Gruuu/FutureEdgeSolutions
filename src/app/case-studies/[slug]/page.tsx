@@ -72,7 +72,7 @@ export default async function CaseStudyDetailPage({ params }: Props) {
 
           <div className="mt-16 flex gap-4">
             <Button asChild>
-              <Link href="/contact#form">Get a Consultation</Link>
+              <Link href="/contact#form">Get in touch</Link>
             </Button>
             <Button asChild variant="outline">
               <Link href="/case-studies">All case studies</Link>

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "Discovery, strategy, implementation, and ongoing support. Clear steps, measurable outcomes.",
+    "How we work: discovery, strategy, implementation, and ongoing support. Clear steps and measurable outcomes.",
 };
 
 export default function ProcessPage() {
@@ -19,7 +19,7 @@ export default function ProcessPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Our process"
-            subtitle="From discovery and strategy development to implementation and ongoing support. We work alongside your teams to ensure sustainable ownership."
+            subtitle="From discovery and strategy through implementation and ongoing support. We work alongside your teams to ensure sustainable ownership and capability transfer."
           />
         </div>
       </section>
@@ -41,11 +41,10 @@ export default function ProcessPage() {
           </div>
           <div className="mt-20 rounded-xl border border-border bg-muted/40 p-8 text-center">
             <h2 className="font-heading text-xl font-bold text-foreground">
-              Ready to get started?
+              Ready to move forward?
             </h2>
             <p className="mt-2 text-muted-foreground">
-              Tell us about your goals. We will help you navigate complexity and deliver measurable
-              results.
+              Share your objectives and we’ll outline how we can help.
             </p>
             <Button asChild size="lg" className="mt-6">
               <Link href="/contact#form">Contact us</Link>

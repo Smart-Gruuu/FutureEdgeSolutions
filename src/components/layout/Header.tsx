@@ -11,17 +11,21 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b-2 border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
-            alt={siteConfig.name}
-            width={120}
-            height={40}
-            className="h-8 w-auto"
+            src="/logo.svg"
+            alt=""
+            width={160}
+            height={56}
+            className="h-11 w-auto"
             priority
+            aria-hidden
           />
+          <span className="font-heading text-lg font-bold text-foreground md:text-xl">
+            {siteConfig.name}
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
@@ -37,11 +41,8 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button asChild size="sm" variant="ghost">
-            <Link href="/contact">Contact</Link>
-          </Button>
-          <Button asChild size="sm">
-            <Link href="/contact#form">Get a Consultation</Link>
+            <Button asChild size="sm">
+            <Link href="/contact#form">Contact us</Link>
           </Button>
         </div>
 
@@ -70,7 +71,7 @@ export function Header() {
 
       <div
         className={cn(
-          "border-t-2 border-border bg-background md:hidden",
+          "border-t border-border bg-background md:hidden",
           mobileOpen ? "block" : "hidden"
         )}
       >
@@ -86,14 +87,9 @@ export function Header() {
             </Link>
           ))}
           <div className="mt-4 flex flex-col gap-2">
-            <Button asChild variant="outline" className="w-full">
-              <Link href="/contact" onClick={() => setMobileOpen(false)}>
-                Contact
-              </Link>
-            </Button>
             <Button asChild className="w-full">
               <Link href="/contact#form" onClick={() => setMobileOpen(false)}>
-                Get a Consultation
+                Contact us
               </Link>
             </Button>
           </div>

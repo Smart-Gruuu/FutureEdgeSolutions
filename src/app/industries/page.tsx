@@ -7,7 +7,7 @@ import { CardLink } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Healthcare, fintech, e‑commerce. We serve organizations globally with deep industry expertise.",
+    "Healthcare, fintech, and e‑commerce. We serve organizations worldwide with dedicated practice expertise and AI integration.",
 };
 
 export default function IndustriesPage() {
@@ -19,7 +19,7 @@ export default function IndustriesPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Industries we serve"
-            subtitle="Healthcare, fintech, and e‑commerce—with deep expertise in each. We understand your challenges and help you achieve measurable results."
+            subtitle="Healthcare, fintech, and e‑commerce—with deep expertise in each. We also deliver AI integration and AI development. We understand your challenges and help you achieve measurable results."
           />
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function IndustriesPage() {
                 <h2 className="font-heading text-2xl font-bold text-foreground">{i.title}</h2>
                 <p className="mt-3 text-muted-foreground">{i.excerpt}</p>
                 <span className="mt-6 inline-block font-medium text-primary hover:underline">
-                  Learn more →
+                  View industry →
                 </span>
               </CardLink>
             ))}

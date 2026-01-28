@@ -6,7 +6,7 @@ import { FaqAccordion } from "@/components/faq/FaqAccordion";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Frequently asked questions about FutureEdge Solutions services, process, and engagement.",
+    "Frequently asked questions about FutureEdge Solutions—services, process, engagement, and AI integration.",
 };
 
 export default function FaqPage() {
@@ -18,7 +18,7 @@ export default function FaqPage() {
         <div className="container mx-auto">
           <SectionHeading
             title="Frequently asked questions"
-            subtitle="Common queries about our services, pricing, process, and how we work."
+            subtitle="Answers to common questions about our services, engagement model, and process."
           />
         </div>
       </section>

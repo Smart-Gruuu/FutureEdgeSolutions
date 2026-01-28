@@ -11,10 +11,10 @@ export function TestimonialsStrip() {
         <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             title="What our clients say"
-            subtitle="Real results from organizations we've partnered with across healthcare, fintech, and e‑commerce."
+            subtitle="Selected feedback on collaboration, delivery, and outcomes."
           />
           <Button asChild variant="outline" size="sm" className="w-fit">
-            <Link href="/testimonials">All testimonials</Link>
+            <Link href="/testimonials">View all testimonials</Link>
           </Button>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">

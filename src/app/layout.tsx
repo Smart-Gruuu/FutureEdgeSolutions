@@ -18,18 +18,18 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "FutureEdge Solutions | Consulting for Healthcare, Fintech & E‑commerce",
+    default: "FutureEdge Solutions | Strategic Consulting for Healthcare, Fintech & E‑commerce",
     template: "%s | FutureEdge Solutions",
   },
   description:
-    "FutureEdge Solutions is a consulting firm helping organizations in healthcare, fintech, and e‑commerce navigate complexity, drive digital transformation, and achieve measurable results. HQ in the US, working globally.",
-  keywords: ["consulting", "healthcare", "fintech", "ecommerce", "digital transformation"],
+    "FutureEdge Solutions helps organizations in healthcare, fintech, and e‑commerce navigate complexity, drive digital transformation, and achieve measurable results. Digital strategy, AI integration, and implementation. Headquarters in Denver; we work with clients worldwide.",
+  keywords: ["consulting", "healthcare", "fintech", "ecommerce", "digital transformation", "AI integration", "strategic consulting"],
   authors: [{ name: "FutureEdge Solutions" }],
   openGraph: {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.svg",
         width: 1200,
         height: 630,
         alt: "FutureEdge Solutions",
