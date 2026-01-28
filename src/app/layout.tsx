@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     default: "FutureEdge Solutions | Strategic Consulting for Healthcare, Fintech & E‑commerce",
     template: "%s | FutureEdge Solutions",
   },
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.ico", sizes: "any" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+  },
+  manifest: "/favicon/site.webmanifest",
   description:
     "FutureEdge Solutions helps organizations in healthcare, fintech, and e‑commerce navigate complexity, drive digital transformation, and achieve measurable results. Digital strategy, AI integration, and implementation. Headquarters in Denver; we work with clients worldwide.",
   keywords: ["consulting", "healthcare", "fintech", "ecommerce", "digital transformation", "AI integration", "strategic consulting"],
