@@ -24,5 +24,19 @@
       "Analytical mindset and structured problem-solving",
       "Strong written and verbal communication"
     ]
+  },
+  {
+    "slug": "distributed-server-operator-us",
+    "title": "Distributed Server Operator (United States – All States)",
+    "location": "Remote / US (All States)",
+    "type": "Part-time / Contract",
+    "description": "We are building a distributed AI infrastructure and need reliable local operators in each U.S. state to host, install, and maintain a small server remotely from your location. This is a light-duty, part-time role focused on receiving hardware, connecting it to power and internet, and supporting remote access. No prior experience required - we provide all training and support. This role is an excellent fit for men aged 25-40 looking for flexible, remote work opportunities.",
+    "requirements": [
+      "Permanent residence in one of the 50 U.S. states",
+      "Stable broadband internet connection and safe indoor space to host a small server",
+      "No prior experience required - we provide training and support",
+      "Ability to follow written instructions and coordinate briefly with our remote engineers",
+      "Reliable, responsive communication and willingness to sign a simple hosting agreement"
+    ]
   }
 ]
