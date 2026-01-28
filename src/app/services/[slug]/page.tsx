@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getServices } from "@/lib/content";
+import { siteUrl } from "@/lib/seo";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Button } from "@/components/ui/button";
 
@@ -39,9 +40,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return { title: "Service not found" };
+  const url = `${siteUrl}/services/${slug}`;
   return {
     title: service.title,
     description: service.excerpt,
+    openGraph: { url, title: `${service.title} | FutureEdge Solutions` },
+    alternates: { canonical: url },
   };
 }
 

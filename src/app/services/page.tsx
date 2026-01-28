@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getServices } from "@/lib/content";
+import { siteUrl } from "@/lib/seo";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { CardLink } from "@/components/shared/Card";
 
@@ -36,6 +37,8 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Healthcare consulting, fintech consulting, e‑commerce solutions, digital transformation, and AI integration. Strategy, implementation, and ongoing support.",
+  openGraph: { url: `${siteUrl}/services`, title: "Services | FutureEdge Solutions" },
+  alternates: { canonical: `${siteUrl}/services` },
 };
 
 export default function ServicesPage() {

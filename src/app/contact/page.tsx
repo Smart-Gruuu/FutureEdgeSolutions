@@ -4,11 +4,14 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { siteConfig } from "@/lib/nav";
 import { Button } from "@/components/ui/button";
+import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Contact FutureEdge Solutions. Send a message, or reach us by email, phone, or at our Denver office.",
+  openGraph: { url: `${siteUrl}/contact`, title: "Contact Us | FutureEdge Solutions" },
+  alternates: { canonical: `${siteUrl}/contact` },
 };
 
 export default function ContactPage() {

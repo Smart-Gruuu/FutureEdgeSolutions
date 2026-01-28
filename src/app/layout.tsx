@@ -3,6 +3,8 @@ import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { siteUrl } from "@/lib/seo";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -16,11 +18,31 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const defaultTitle = "FutureEdge Solutions | Strategic Consulting for Healthcare, Fintech & E‑commerce";
+const defaultDescription =
+  "FutureEdge Solutions helps organizations in healthcare, fintech, and e‑commerce navigate complexity, drive digital transformation, and achieve measurable results. Digital strategy, AI integration, and implementation. Headquarters in Denver; we work with clients worldwide.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "FutureEdge Solutions | Strategic Consulting for Healthcare, Fintech & E‑commerce",
+    default: defaultTitle,
     template: "%s | FutureEdge Solutions",
   },
+  description: defaultDescription,
+  keywords: [
+    "consulting",
+    "healthcare consulting",
+    "fintech consulting",
+    "ecommerce consulting",
+    "digital transformation",
+    "AI integration",
+    "strategic consulting",
+    "Denver consulting",
+  ],
+  authors: [{ name: "FutureEdge Solutions", url: siteUrl }],
+  creator: "FutureEdge Solutions",
+  publisher: "FutureEdge Solutions",
+  formatDetection: { email: false, address: false, telephone: false },
   icons: {
     icon: [
       { url: "/favicon/favicon.ico", sizes: "any" },
@@ -29,12 +51,13 @@ export const metadata: Metadata = {
     apple: "/favicon/apple-touch-icon.png",
   },
   manifest: "/favicon/site.webmanifest",
-  description:
-    "FutureEdge Solutions helps organizations in healthcare, fintech, and e‑commerce navigate complexity, drive digital transformation, and achieve measurable results. Digital strategy, AI integration, and implementation. Headquarters in Denver; we work with clients worldwide.",
-  keywords: ["consulting", "healthcare", "fintech", "ecommerce", "digital transformation", "AI integration", "strategic consulting"],
-  authors: [{ name: "FutureEdge Solutions" }],
   openGraph: {
     type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "FutureEdge Solutions",
+    title: defaultTitle,
+    description: defaultDescription,
     images: [
       {
         url: "/logo.svg",
@@ -43,6 +66,19 @@ export const metadata: Metadata = {
         alt: "FutureEdge Solutions",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 
@@ -54,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${plusJakarta.variable}`}>
       <body className="min-h-screen flex flex-col font-sans">
+        <JsonLd />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:outline-none"

@@ -3,11 +3,14 @@ import Link from "next/link";
 import { getTeam, getIndustries } from "@/lib/content";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Button } from "@/components/ui/button";
+import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
     "FutureEdge Solutions — mission, values, history, and team. We serve healthcare, fintech, and e‑commerce with digital transformation and AI integration. Headquarters in Denver; we work with clients worldwide.",
+  openGraph: { url: `${siteUrl}/about`, title: "About Us | FutureEdge Solutions" },
+  alternates: { canonical: `${siteUrl}/about` },
 };
 
 export default function AboutPage() {

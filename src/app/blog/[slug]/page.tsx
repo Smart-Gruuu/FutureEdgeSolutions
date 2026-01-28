@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { getBlogPost, getBlogSlugs } from "@/lib/content";
 import { Button } from "@/components/ui/button";
+import { siteUrl } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -11,9 +12,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: "Post not found" };
+  const url = `${siteUrl}/blog/${slug}`;
   return {
     title: post.meta.title,
     description: post.meta.excerpt,
+    openGraph: { url, title: `${post.meta.title} | FutureEdge Solutions` },
+    alternates: { canonical: url },
   };
 }
 
