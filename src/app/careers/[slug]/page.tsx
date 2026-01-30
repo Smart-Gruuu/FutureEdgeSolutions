@@ -57,7 +57,7 @@ export default async function CareerDetailPage({ params }: Props) {
 
           <div className="mt-16 flex flex-wrap gap-4">
             <Button asChild size="lg">
-              <a href={`mailto:jobs@futureedge.io?subject=Application: ${encodeURIComponent(job.title)}`}>
+              <a href={`mailto:hello@futureedge.it.com?subject=Application: ${encodeURIComponent(job.title)}`}>
                 Apply now
               </a>
             </Button>
