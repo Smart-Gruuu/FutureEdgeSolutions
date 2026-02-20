@@ -41,8 +41,8 @@ export default function CareersPage() {
           {careers.length === 0 ? (
             <p className="mt-6 text-muted-foreground">
               No open positions at the moment. Check back later or email{" "}
-              <a href="mailto:hello@futureedge.it.com" className="text-primary hover:underline">
-                hello@futureedge.it.com
+              <a href="mailto:taylor@futureedge.it.com" className="text-primary hover:underline">
+                taylor@futureedge.it.com
               </a>{" "}
               to express your interest.
             </p>

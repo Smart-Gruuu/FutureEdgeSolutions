@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCareerBySlug, getCareers } from "@/lib/content";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Button } from "@/components/ui/button";
+import { ApplySection } from "@/components/careers/ApplySection";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -55,16 +54,7 @@ export default async function CareerDetailPage({ params }: Props) {
             </>
           )}
 
-          <div className="mt-16 flex flex-wrap gap-4">
-            <Button asChild size="lg">
-              <a href={`mailto:hello@futureedge.it.com?subject=Application: ${encodeURIComponent(job.title)}`}>
-                Apply now
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/careers">All openings</Link>
-            </Button>
-          </div>
+          <ApplySection jobTitle={job.title} />
         </div>
       </section>
     </div>

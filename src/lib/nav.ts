@@ -27,8 +27,8 @@ export const siteConfig = {
   heroHeadline: "Strategy and execution that deliver measurable results",
   heroSubline: "We partner with organizations to navigate digital transformation, integrate AI, and drive sustainable growth—from discovery through implementation.",
   contact: {
-    email: "hello@futureedge.it.com",
-    phone: "+1 (555) 123-4567",
+    email: "taylor@futureedge.it.com",
+    phone: "+1 (601) 602-7733",
     address: "1401 Lawrence St, Suite 1600, Denver, CO 80202",
   },
   social: {
