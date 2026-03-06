@@ -1,22 +1,22 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { siteConfig } from "@/lib/nav";
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
-      <h1 className="font-heading text-6xl font-bold text-foreground">404</h1>
-      <p className="mt-4 text-lg text-muted-foreground">Page not found</p>
-      <p className="mt-2 max-w-md text-center text-muted-foreground">
-        The page you&apos;re looking for doesn&apos;t exist or has been moved.
-      </p>
-      <div className="mt-10 flex gap-4">
-        <Button asChild>
-          <Link href="/">Home</Link>
-        </Button>
-        <Button asChild variant="outline">
-          <Link href="/contact">Contact us</Link>
-        </Button>
+    <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4">
+      <div className="mx-auto max-w-md text-center">
+        <h1 className="text-4xl font-bold text-gray-900">404</h1>
+        <p className="mt-2 text-gray-600">This page could not be found.</p>
+        <div className="mt-8 flex justify-center gap-4">
+          <Link href="/" className="btn-gradient inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold">
+            Careers home
+          </Link>
+          <Link
+            href="/jobs"
+            className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-all duration-200 hover:scale-[1.02] hover:border-gray-400 hover:bg-gray-50"
+          >
+            Open roles
+          </Link>
+        </div>
       </div>
     </div>
   );

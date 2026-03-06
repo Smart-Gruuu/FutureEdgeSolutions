@@ -1,77 +1,178 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    /* Light fallback */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 9%;
-    --primary: 152 69% 42%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 18%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 12% 95%;
-    --muted-foreground: 220 10% 40%;
-    --accent: 152 69% 48%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 75% 50%;
-    --border: 220 14% 88%;
-    --input: 220 14% 90%;
-    --ring: 152 69% 42%;
+/* Match nextlearnaisec.org color theme */
+:root {
+  --background: #0c0e1a;
+  --background-end: #1a1a2e;
+  --foreground: #ffffff;
+  --muted: #b0b0b0;
+  --accent-cyan: #00c6ff;
+  --accent-purple: #6a5acd;
+  --gradient-start: #00c6ff;
+  --gradient-end: #6a5acd;
+  --card-bg: rgba(20, 22, 38, 0.6);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Gradient text - cyan to purple like nextlearnaisec */
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero: deep navy/indigo to purple-blue + subtle glowing concentric circles */
+.hero-gradient {
+  background: 
+    radial-gradient(ellipse 100% 80% at 30% 10%, rgba(0, 198, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(106, 90, 205, 0.1) 0%, transparent 45%),
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(106, 90, 205, 0.05) 0%, transparent 60%),
+    linear-gradient(180deg, var(--background) 0%, var(--background-end) 100%);
+  position: relative;
+}
+/* Subtle animated glow orbs (optional - use on hero for motion) */
+.hero-gradient::before,
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+  animation: glow-pulse 8s ease-in-out infinite;
+}
+.hero-gradient::before {
+  width: 400px;
+  height: 400px;
+  top: -10%;
+  left: -5%;
+  background: rgba(0, 198, 255, 0.15);
+  animation-delay: 0s;
+}
+.hero-gradient::after {
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  right: -5%;
+  left: auto;
+  background: rgba(106, 90, 205, 0.2);
+  animation-delay: -4s;
+}
+
+/* Subtle grid pattern */
+.pattern-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Primary button - cyan to purple gradient like nextlearnaisec */
+.btn-gradient {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-gradient:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 198, 255, 0.25), 0 0 40px rgba(106, 90, 205, 0.15);
+}
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
   }
-
-  /* Euvic-style dark: black + white + green accent (technological sustainability) */
-  .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
-    --card: 220 14% 8%;
-    --card-foreground: 0 0% 98%;
-    --primary: 152 69% 45%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 220 12% 14%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 12% 10%;
-    --muted-foreground: 220 8% 68%;
-    --accent: 152 69% 50%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 85% 58%;
-    --border: 220 10% 16%;
-    --input: 220 10% 16%;
-    --ring: 152 69% 45%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  /* Anchor targets clear the sticky header */
-  [id] {
-    scroll-margin-top: 5rem;
-  }
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground antialiased;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
-  }
-  strong {
-    @apply font-bold;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@layer utilities {
-  /* Euvic-style subtle shadows */
-  .shadow-heavy {
-    box-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
-  }
-  .shadow-heavy-lg {
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.9; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+/* Stagger delays for children */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-delay-600 { animation-delay: 600ms; }
+
+/* Hero entrance stagger */
+.hero-animate-1 { opacity: 0; animation: fadeInUp 0.6s ease-out 0ms forwards; }
+.hero-animate-2 { opacity: 0; animation: fadeInUp 0.6s ease-out 80ms forwards; }
+.hero-animate-3 { opacity: 0; animation: fadeInUp 0.6s ease-out 160ms forwards; }
+.hero-animate-4 { opacity: 0; animation: fadeInUp 0.6s ease-out 240ms forwards; }
+.hero-animate-5 { opacity: 0; animation: fadeInUp 0.6s ease-out 320ms forwards; }
+.hero-animate-6 { opacity: 0; animation: fadeInUp 0.6s ease-out 400ms forwards; }
+
+/* Initial state for scroll-triggered animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card hover lift - light theme */
+.card-hover {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }

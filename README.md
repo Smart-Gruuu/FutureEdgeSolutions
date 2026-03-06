@@ -1,70 +1,36 @@
-# FutureEdge Solutions
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern consulting firm website for **FutureEdge Solutions**, covering healthcare, fintech, e‑commerce, and digital transformation. Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- **Home**: Hero, services preview, process teaser, testimonials strip, CTA
-- **About**: Mission, values, history, industries, team
-- **Services**: Listing and detail pages (healthcare, fintech, e‑commerce, digital)
-- **Industries**: Healthcare, fintech, e‑commerce with challenges and case studies
-- **Case Studies**: Client success stories with results and testimonials
-- **Our Process**: Discovery → Strategy → Implementation → Support
-- **Blog**: MDX-based articles with frontmatter
-- **Contact**: Form (React Hook Form + Zod), mailto: link, map placeholder
-- **FAQ**: Accordion from JSON
-- **Testimonials**: Dedicated page
-- **Legal**: Privacy Policy, Terms of Service (placeholder copy)
-- **Careers**: Open positions and role detail pages
-
-## Tech stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS, shadcn-style UI (Radix)
-- **Motion**: Framer Motion (scroll-triggered fade-in)
-- **Content**: JSON (services, industries, team, etc.) + MDX (blog)
-- **Forms**: React Hook Form, Zod, mailto: (contact)
-
-## Getting started
-
-1. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-2. **Run development server**
-
-   ```bash
-   npm run dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000).
-
-3. **Build for production**
-
-   ```bash
-   npm run build
-   npm start
-   ```
-
-## Project structure
-
-```
-src/
-├── app/           # App Router pages and API routes
-├── components/    # Layout, UI, home, about, forms, etc.
-├── content/       # JSON + blog MDX
-├── lib/           # Content loaders, utils, nav
-└── types/         # Content types
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Content
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Edit `src/content/*.json` for services, industries, case studies, team, testimonials, process, FAQ, careers.
-- Add blog posts as `src/content/blog/*.mdx` with frontmatter: `title`, `date`, `author`, `excerpt`.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## License
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Private. All rights reserved.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
