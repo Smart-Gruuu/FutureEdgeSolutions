@@ -136,4 +136,27 @@ export const jobs: Job[] = [
     ],
     postedAt: "2024-03-05",
   },
+  {
+    id: "remote-hardware-setup-assistant",
+    title: "Remote Hardware Setup Assistant (No Experience Required) — Contractor",
+    department: "Operations",
+    location: "Remote",
+    type: "Contract",
+    description: "We're hiring a reliable person to help with a straightforward setup task. We'll ship you a small device. Your job is to plug it in, connect it to the internet, and let our team access it remotely. You don't need deep technical experience — we just need someone who can follow instructions carefully and communicate clearly. You will not access customer data; you're only providing physical hosting and basic connectivity so our team can manage the device remotely. Typically 1–2 hours for initial setup, with potential small follow-up tasks if we ship additional devices. Paid per setup or hourly (depending on preference).",
+    responsibilities: [
+      "Receive a shipped device and confirm it arrived safely",
+      "Place it on a desk or shelf and plug it into power",
+      "Connect it to your internet router (usually with an Ethernet cable)",
+      "Join a short call with our team while we verify remote access",
+      "If asked, do simple checks like \"is it powered on?\" or \"are the cables seated?\"",
+    ],
+    requirements: [
+      "You can follow a checklist exactly",
+      "You respond promptly and communicate clearly",
+      "You have a stable internet connection and a safe place to keep the device",
+      "You're comfortable taking a few photos (setup confirmation) and joining a quick video call",
+      "Nice to have (but not required): experience setting up a router, PC, or smart device; ability to plug in Ethernet cables and identify common ports",
+    ],
+    postedAt: "2025-03-05",
+  },
 ];
